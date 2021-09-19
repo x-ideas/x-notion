@@ -7,6 +7,7 @@ module.exports = {
     "standard",
     "plugin:react/recommended",
     "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:node/recommended",
     "plugin:prettier/recommended",
   ],
@@ -22,5 +23,12 @@ module.exports = {
   rules: {
     "node/no-unsupported-features/es-syntax": "off",
     "node/no-unpublished-import": "off",
+  },
+  settings: {
+    node: {
+      allowModules: ["electron"],
+      resolvePaths: [__dirname],
+      tryExtensions: [".js", ".json", ".ts", ".mjs", ".tsx", ".node"],
+    },
   },
 };

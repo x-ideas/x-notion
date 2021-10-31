@@ -4,11 +4,10 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "standard",
-    "plugin:react/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:node/recommended",
+    "plugin:react/recommended",
     "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
